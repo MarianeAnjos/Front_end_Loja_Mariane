@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatButtonModule} from '@angular/material/button';
 import { ProdutoListaComponent } from "./views/produto/produto-lista/produto-lista.component";
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,6 +23,7 @@ import { ProdutoListaComponent } from "./views/produto/produto-lista/produto-lis
     providers: [],
     bootstrap: [AppComponent],
     imports: [
+        HttpClientModule,
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
@@ -30,6 +32,7 @@ import { ProdutoListaComponent } from "./views/produto/produto-lista/produto-lis
         MatSnackBarModule,
         MatButtonModule,
         ProdutoListaComponent
+
     ]
 })
 export class AppModule { }
